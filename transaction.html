@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="transaction.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="ledger">
+        <h2>Income Expense Tracker</h2>
+       
+        
+        <form action="#" id="form">
+          <div class="form-control">
+            <label for="desc">Description</label>
+            <input type="text" name="desc" id="desc" placeholder="Enter Description" />
+          </div>
+
+          <div class="form-control">
+            <label for="amount">Amount</label>
+            <input type="number" name="amount" id="amount" placeholder="Amount" />
+          </div>
+          <button class="btn" type="submit">Add Transaction</button>
+        </form>
+      </div>
+      <div class="transaction">
+        <h3>History</h3>
+        <ul class="trans" id="trans">
+          <li class="exp">
+            Insurance
+            <span>-1500</span>
+            <button class="btn-del">x</button>
+          </li>
+          <li class="inc">
+            Salary
+            <span>35000</span>
+            <button class="btn-del">x</button>
+          </li>
+          <li class="exp">
+            Food
+            <span>-350</span>
+            <button class="btn-del">x</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="transaction.js"></script>
+  </body>
+</html>
